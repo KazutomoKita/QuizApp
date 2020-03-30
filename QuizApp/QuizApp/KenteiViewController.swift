@@ -9,6 +9,15 @@
 import UIKit
 
 class KenteiViewController: UIViewController {
+    
+    @IBOutlet weak var mondaiNumber: UILabel!
+    @IBOutlet weak var mondaiTextView: UITextView!
+    @IBOutlet weak var answerButton1: UIButton!
+    @IBOutlet weak var answerButton2: UIButton!
+    @IBOutlet weak var answerButton3: UIButton!
+    @IBOutlet weak var answerButton4: UIButton!
+    @IBOutlet weak var judgeImageView: UIImageView!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()

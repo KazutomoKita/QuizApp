@@ -93,7 +93,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="b1j-Pg-WOK">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="b1j-Pg-WOK">
                                 <rect key="frame" x="20" y="100" width="374" height="128"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
@@ -154,6 +154,7 @@
                             <constraint firstItem="BsQ-03-0yn" firstAttribute="trailing" secondItem="9wL-92-26t" secondAttribute="trailing" constant="82" id="op1-pG-dxq"/>
                             <constraint firstItem="9wL-92-26t" firstAttribute="top" secondItem="BsQ-03-0yn" secondAttribute="top" constant="18" id="phJ-Ng-IVk"/>
                             <constraint firstItem="8Dc-ED-aqd" firstAttribute="top" secondItem="x15-as-qXz" secondAttribute="bottom" constant="20" id="qrr-M9-jw1"/>
+                            <constraint firstItem="b1j-Pg-WOK" firstAttribute="centerY" secondItem="J3j-Nf-tCK" secondAttribute="centerY" id="r8w-aG-HkT"/>
                             <constraint firstItem="C8m-Kn-l5d" firstAttribute="top" secondItem="J3j-Nf-tCK" secondAttribute="bottom" constant="189" id="s9I-tU-cvW"/>
                             <constraint firstItem="BsQ-03-0yn" firstAttribute="bottom" secondItem="y1y-JD-Kny" secondAttribute="bottom" constant="230" id="sW7-fY-ars"/>
                             <constraint firstItem="BsQ-03-0yn" firstAttribute="trailing" secondItem="J3j-Nf-tCK" secondAttribute="trailing" constant="132" id="tmi-bi-dma"/>
@@ -163,6 +164,15 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="BsQ-03-0yn"/>
                     </view>
+                    <connections>
+                        <outlet property="answerButton1" destination="C8m-Kn-l5d" id="JCc-T3-aK2"/>
+                        <outlet property="answerButton2" destination="x15-as-qXz" id="lVo-K3-aBc"/>
+                        <outlet property="answerButton3" destination="8Dc-ED-aqd" id="9lw-WN-Ymf"/>
+                        <outlet property="answerButton4" destination="y1y-JD-Kny" id="PWn-6e-VAb"/>
+                        <outlet property="judgeImageView" destination="J3j-Nf-tCK" id="IgF-K0-Zzm"/>
+                        <outlet property="mondaiNumber" destination="9wL-92-26t" id="AA7-P8-G63"/>
+                        <outlet property="mondaiTextView" destination="b1j-Pg-WOK" id="One-0V-D4w"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NTm-5t-RPJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
