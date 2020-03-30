@@ -13,6 +13,9 @@
 		7D861A542431CF7700C24BD0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D861A522431CF7700C24BD0 /* Main.storyboard */; };
 		7D861A562431CF7900C24BD0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D861A552431CF7900C24BD0 /* Assets.xcassets */; };
 		7D861A592431CF7900C24BD0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D861A572431CF7900C24BD0 /* LaunchScreen.storyboard */; };
+		7D861A612431D20800C24BD0 /* KenteiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D861A602431D20800C24BD0 /* KenteiViewController.swift */; };
+		7D861A632431D54D00C24BD0 /* ScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D861A622431D54D00C24BD0 /* ScoreViewController.swift */; };
+		7D861A6B24320C3900C24BD0 /* start.csv in Resources */ = {isa = PBXBuildFile; fileRef = 7D861A6A24320C3900C24BD0 /* start.csv */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		7D861A552431CF7900C24BD0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7D861A582431CF7900C24BD0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7D861A5A2431CF7900C24BD0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7D861A602431D20800C24BD0 /* KenteiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KenteiViewController.swift; sourceTree = "<group>"; };
+		7D861A622431D54D00C24BD0 /* ScoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreViewController.swift; sourceTree = "<group>"; };
+		7D861A6A24320C3900C24BD0 /* start.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = start.csv; path = ../../../../Downloads/start.csv; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,11 +66,22 @@
 				7D861A4E2431CF7700C24BD0 /* SceneDelegate.swift */,
 				7D861A502431CF7700C24BD0 /* ViewController.swift */,
 				7D861A522431CF7700C24BD0 /* Main.storyboard */,
+				7D861A622431D54D00C24BD0 /* ScoreViewController.swift */,
+				7D861A602431D20800C24BD0 /* KenteiViewController.swift */,
+				7D861A6924320BC800C24BD0 /* csv */,
 				7D861A552431CF7900C24BD0 /* Assets.xcassets */,
 				7D861A572431CF7900C24BD0 /* LaunchScreen.storyboard */,
 				7D861A5A2431CF7900C24BD0 /* Info.plist */,
 			);
 			path = QuizApp;
+			sourceTree = "<group>";
+		};
+		7D861A6924320BC800C24BD0 /* csv */ = {
+			isa = PBXGroup;
+			children = (
+				7D861A6A24320C3900C24BD0 /* start.csv */,
+			);
+			path = csv;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +142,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D861A6B24320C3900C24BD0 /* start.csv in Resources */,
 				7D861A592431CF7900C24BD0 /* LaunchScreen.storyboard in Resources */,
 				7D861A562431CF7900C24BD0 /* Assets.xcassets in Resources */,
 				7D861A542431CF7700C24BD0 /* Main.storyboard in Resources */,
@@ -138,7 +156,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D861A612431D20800C24BD0 /* KenteiViewController.swift in Sources */,
 				7D861A512431CF7700C24BD0 /* ViewController.swift in Sources */,
+				7D861A632431D54D00C24BD0 /* ScoreViewController.swift in Sources */,
 				7D861A4D2431CF7700C24BD0 /* AppDelegate.swift in Sources */,
 				7D861A4F2431CF7700C24BD0 /* SceneDelegate.swift in Sources */,
 			);
