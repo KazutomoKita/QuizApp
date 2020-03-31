@@ -10,7 +10,6 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="QuizApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -76,6 +75,7 @@
                         <outlet property="titleLabel" destination="PmZ-ei-3vC" id="MDL-Nm-wO3"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1800.0000000000002" y="70.982142857142847"/>
         </scene>
@@ -172,18 +172,19 @@
                         <outlet property="judgeImageView" destination="J3j-Nf-tCK" id="IgF-K0-Zzm"/>
                         <outlet property="mondaiNumberLabel" destination="9wL-92-26t" id="AA7-P8-G63"/>
                         <outlet property="mondaiTextView" destination="b1j-Pg-WOK" id="One-0V-D4w"/>
+                        <segue destination="h83-LP-paf" kind="presentation" identifier="score" id="wx3-D3-O5l"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NTm-5t-RPJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2898.5507246376815" y="70.982142857142847"/>
+            <point key="canvasLocation" x="2875" y="71"/>
         </scene>
         <!--Score View Controller-->
         <scene sceneID="8Df-26-TK0">
             <objects>
                 <viewController id="h83-LP-paf" customClass="ScoreViewController" customModule="QuizApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Rvq-wf-K4z">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="kDl-Xr-41q"/>

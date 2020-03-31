@@ -100,14 +100,19 @@ class KenteiViewController: UIViewController {
     func nextProblem() {
         mondaiCount += 1
         mondaiArray.removeAll()
-        mondaiArray = csvArray[mondaiCount].components(separatedBy: ",")
         
-        mondaiNumberLabel.text = "第\(mondaiCount+1)問"
-        mondaiTextView.text = mondaiArray[0]
-        answerButton1.setTitle(mondaiArray[2], for: .normal)
-        answerButton2.setTitle(mondaiArray[3], for: .normal)
-        answerButton3.setTitle(mondaiArray[4], for: .normal)
-        answerButton4.setTitle(mondaiArray[5], for: .normal)
+        if mondaiCount < total {
+            mondaiArray = csvArray[mondaiCount].components(separatedBy: ",")
+        
+            mondaiNumberLabel.text = "第\(mondaiCount+1)問"
+            mondaiTextView.text = mondaiArray[0]
+            answerButton1.setTitle(mondaiArray[2], for: .normal)
+            answerButton2.setTitle(mondaiArray[3], for: .normal)
+            answerButton3.setTitle(mondaiArray[4], for: .normal)
+            answerButton4.setTitle(mondaiArray[5], for: .normal)
+        } else {
+            performSegue(withIdentifier: "score", sender: nil)
+        }
     }
     
     func kaisetsu() {
