@@ -89,6 +89,11 @@ class KenteiViewController: UIViewController {
         } else {
             judgeImageView.image = UIImage(named: "batsu")
         }
+        
+        //judgementImageViewを表示
+        judgeImageView.isHidden = false
+        
+        //メソッド呼び出し
         kaisetsu()
     }
     
