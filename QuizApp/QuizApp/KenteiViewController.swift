@@ -27,6 +27,10 @@ class KenteiViewController: UIViewController {
     
     var kaisetsuBGImageView = UIImageView()
     var kaisetsuBGX = 0.0
+    var seikaiLabel = UILabel()
+    var kaisetsuTextView = UITextView()
+    var backButton = UIButton()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,6 +47,25 @@ class KenteiViewController: UIViewController {
         
         self.view.addSubview(kaisetsuBGImageView)
         
+        seikaiLabel.frame = CGRect(x: 10, y: 5, width: 300, height: 30)
+        seikaiLabel.textAlignment = .Center
+        seikaiLabel.font = UIFont.systemFontOfSize(15)
+        
+        kaisetsuBGImageView.addSubview(seikaiLabel)
+        kaisetsuTextView.frame = CGRect(x: 10, y: 40, width: 300, height: 140)
+        kaisetsuTextView.backgroundColor = UIColor.clearColor()
+        kaisetsuTextView.font = UIFont.systemFontSize(17)
+        kaisetsuTextView.editable = false
+        
+        kaisetsuBGImageView.addSubview(kaisetsuTextView)
+        
+        backButton.frame = CGRect(x: 10, y: 180, width: 300, height: 30)
+        backButton.setImage(UIImage(named: ""), forState: .normal)
+        backButton.setImage(UIImage(named: ""), forState: .highLighted)
+        backButton.addTarget(self, action: "backButtonTapped", forControlEvents: UIColorEvents.TouchUpInside)
+        
+        kaisetsuBGImageView.addSubview(backButton)
+
         let viewController = ViewController()
         
         csvArray = viewController.loadCSV(fileName: "kentei")
