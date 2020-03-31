@@ -48,21 +48,21 @@ class KenteiViewController: UIViewController {
         self.view.addSubview(kaisetsuBGImageView)
         
         seikaiLabel.frame = CGRect(x: 10, y: 5, width: 300, height: 30)
-        seikaiLabel.textAlignment = .Center
-        seikaiLabel.font = UIFont.systemFontOfSize(15)
+        seikaiLabel.textAlignment = .center
+        seikaiLabel.font = UIFont.systemFont(ofSize: 15)
         
         kaisetsuBGImageView.addSubview(seikaiLabel)
         kaisetsuTextView.frame = CGRect(x: 10, y: 40, width: 300, height: 140)
-        kaisetsuTextView.backgroundColor = UIColor.clearColor()
-        kaisetsuTextView.font = UIFont.systemFontSize(17)
-        kaisetsuTextView.editable = false
+        kaisetsuTextView.backgroundColor = UIColor.clear
+        kaisetsuTextView.font = UIFont.systemFont(ofSize: 17)
+        kaisetsuTextView.isEditable = false
         
         kaisetsuBGImageView.addSubview(kaisetsuTextView)
         
         backButton.frame = CGRect(x: 10, y: 180, width: 300, height: 30)
-        backButton.setImage(UIImage(named: ""), forState: .normal)
-        backButton.setImage(UIImage(named: ""), forState: .highLighted)
-        backButton.addTarget(self, action: "backButtonTapped", forControlEvents: UIColorEvents.TouchUpInside)
+        backButton.setImage(UIImage(named: ""), for: .normal)
+        //backButton.setImage(UIImage(named: ""), for: .highLighted)
+        backButton.addTarget(self, action: "backButtonTapped", for: UIControl.Event.touchUpInside)
         
         kaisetsuBGImageView.addSubview(backButton)
 
@@ -89,7 +89,7 @@ class KenteiViewController: UIViewController {
         } else {
             judgeImageView.image = UIImage(named: "batsu")
         }
-        nextProblem()
+        kaisetsu()
     }
     
     func nextProblem() {
@@ -103,6 +103,20 @@ class KenteiViewController: UIViewController {
         answerButton2.setTitle(mondaiArray[3], for: .normal)
         answerButton3.setTitle(mondaiArray[4], for: .normal)
         answerButton4.setTitle(mondaiArray[5], for: .normal)
+    }
+    
+    func kaisetsu() {
+        seikaiLabel.text = mondaiArray[6]
+        kaisetsuTextView.text = mondaiArray[7]
+        let answerButtonY = answerButton1.frame.origin.y
+        
+        UIView.animate(withDuration: 0.5, animations: {() -> Void in self.kaisetsuBGImageView.frame = CGRect(x: self.kaisetsuBGX, y:Double(answerButtonY), width:320, height: 210)})
+        
+        answerButton1.isEnabled = false
+        answerButton2.isEnabled = false
+        answerButton3.isEnabled = false
+        answerButton4.isEnabled = false
+        
     }
 
 }
