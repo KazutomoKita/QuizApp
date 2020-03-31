@@ -25,9 +25,24 @@ class KenteiViewController: UIViewController {
     var correctCount = 0
     let total = 10
     
+    var kaisetsuBGImageView = UIImageView()
+    var kaisetsuBGX = 0.0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        kaisetsuBGImageView.image = UIImage(named: "kaisetsuBG")
+        
+        /**/let screenSize:CGSize = (UIScreen.main.bounds.size)
+        
+        kaisetsuBGX = Double(screenSize.width/2) - 320 / 2
+        
+        kaisetsuBGImageView.frame = CGRect(x: kaisetsuBGX, y:Double(screenSize.height), width: 320, height: 210)
+        
+        kaisetsuBGImageView.isUserInteractionEnabled = true
+        
+        self.view.addSubview(kaisetsuBGImageView)
+        
         let viewController = ViewController()
         
         csvArray = viewController.loadCSV(fileName: "kentei")
@@ -51,6 +66,7 @@ class KenteiViewController: UIViewController {
         } else {
             judgeImageView.image = UIImage(named: "batsu")
         }
+        nextProblem()
     }
     
     func nextProblem() {
