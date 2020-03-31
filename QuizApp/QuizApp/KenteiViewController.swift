@@ -47,6 +47,9 @@ class KenteiViewController: UIViewController {
     @IBAction func buttonAction(sender: UIButton) {
         if sender.tag == Int(mondaiArray[1]) {
             judgeImageView.image = UIImage(named: "maru")
+            correctCount += 1
+        } else {
+            judgeImageView.image = UIImage(named: "batsu")
         }
     }
 
