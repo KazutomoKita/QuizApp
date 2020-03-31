@@ -170,7 +170,7 @@
                         <outlet property="answerButton3" destination="8Dc-ED-aqd" id="9lw-WN-Ymf"/>
                         <outlet property="answerButton4" destination="y1y-JD-Kny" id="PWn-6e-VAb"/>
                         <outlet property="judgeImageView" destination="J3j-Nf-tCK" id="IgF-K0-Zzm"/>
-                        <outlet property="mondaiNumber" destination="9wL-92-26t" id="AA7-P8-G63"/>
+                        <outlet property="mondaiNumberLabel" destination="9wL-92-26t" id="AA7-P8-G63"/>
                         <outlet property="mondaiTextView" destination="b1j-Pg-WOK" id="One-0V-D4w"/>
                     </connections>
                 </viewController>

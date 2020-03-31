@@ -10,7 +10,7 @@ import UIKit
 
 class KenteiViewController: UIViewController {
     
-    @IBOutlet weak var mondaiNumber: UILabel!
+    @IBOutlet weak var mondaiNumberLabel: UILabel!
     @IBOutlet weak var mondaiTextView: UITextView!
     @IBOutlet weak var answerButton1: UIButton!
     @IBOutlet weak var answerButton2: UIButton!
@@ -25,32 +25,23 @@ class KenteiViewController: UIViewController {
     var correctCount = 0
     let total = 10
     
-    func loadCSV(fileName :String) -> [String] {
-        
-        var csvArray:[String] = []
-        
-        let csvBundle = Bundle.main.path(forResource: fileName, ofType: "csv")!
-        
-        
-        do {
-            let csvData = try String(contentsOfFile: csvBundle, encoding: String.Encoding.utf8)
-            
-            let lineChange = csvData.replacingOccurrences(of: "\r", with: "\n")
-            csvArray = lineChange.components(separatedBy: "\n")
-            
-        } catch let error as NSError {
-            print("エラー: \(error)")
-        }
-         return csvArray
-    }
-    
-   
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        let viewController = ViewController()
+        
+        csvArray = viewController.loadCSV(fileName: "kentei")
+        
+        mondaiArray = csvArray[mondaiCount].components(separatedBy: ",")
+        
+        mondaiNumberLabel.text = "第\(mondaiCount+1)問"
+        
+        mondaiTextView.text = mondaiArray[0]
+        
+        answerButton1.setTitle(mondaiArray[2], for: .normal)
+        answerButton1.setTitle(mondaiArray[3], for: .normal)
+        answerButton1.setTitle(mondaiArray[4], for: .normal)
+        answerButton1.setTitle(mondaiArray[5], for: .normal)
     }
     
 
