@@ -118,5 +118,21 @@ class KenteiViewController: UIViewController {
         answerButton4.isEnabled = false
         
     }
+    
+    func backButtonTapped() {
+        let screenHeight = Double(UIScreen.main.bounds.size.height)
+        
+        UIView.animate(withDuration: 0.5, animations: {() -> Void in
+            self.kaisetsuBGImageView.frame = CGRect(x: self.kaisetsuBGX, y: screenHeight, width: 320, height: 210)
+        })
+        
+        answerButton1.isEnabled = true
+        answerButton1.isEnabled = true
+        answerButton1.isEnabled = true
+        answerButton1.isEnabled = true
+        
+        judgeImageView.isHidden = true
+        nextProblem()
+    }
 
 }
