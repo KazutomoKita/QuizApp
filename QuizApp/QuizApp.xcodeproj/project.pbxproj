@@ -16,6 +16,7 @@
 		7D861A612431D20800C24BD0 /* KenteiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D861A602431D20800C24BD0 /* KenteiViewController.swift */; };
 		7D861A632431D54D00C24BD0 /* ScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D861A622431D54D00C24BD0 /* ScoreViewController.swift */; };
 		7D861A6B24320C3900C24BD0 /* start.csv in Resources */ = {isa = PBXBuildFile; fileRef = 7D861A6A24320C3900C24BD0 /* start.csv */; };
+		7D861A6D24322E3E00C24BD0 /* kentei.csv in Resources */ = {isa = PBXBuildFile; fileRef = 7D861A6C24322E3E00C24BD0 /* kentei.csv */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		7D861A602431D20800C24BD0 /* KenteiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KenteiViewController.swift; sourceTree = "<group>"; };
 		7D861A622431D54D00C24BD0 /* ScoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreViewController.swift; sourceTree = "<group>"; };
 		7D861A6A24320C3900C24BD0 /* start.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = start.csv; path = ../../../../Downloads/start.csv; sourceTree = "<group>"; };
+		7D861A6C24322E3E00C24BD0 /* kentei.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = kentei.csv; path = ../../../../Downloads/kentei.csv; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				7D861A6A24320C3900C24BD0 /* start.csv */,
+				7D861A6C24322E3E00C24BD0 /* kentei.csv */,
 			);
 			path = csv;
 			sourceTree = "<group>";
@@ -143,6 +146,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7D861A6B24320C3900C24BD0 /* start.csv in Resources */,
+				7D861A6D24322E3E00C24BD0 /* kentei.csv in Resources */,
 				7D861A592431CF7900C24BD0 /* LaunchScreen.storyboard in Resources */,
 				7D861A562431CF7900C24BD0 /* Assets.xcassets in Resources */,
 				7D861A542431CF7700C24BD0 /* Main.storyboard in Resources */,

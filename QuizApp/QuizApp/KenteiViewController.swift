@@ -18,7 +18,35 @@ class KenteiViewController: UIViewController {
     @IBOutlet weak var answerButton4: UIButton!
     @IBOutlet weak var judgeImageView: UIImageView!
     
-
+    var csvArray:[String] = []
+    
+    var mondaiArray:[String] = []
+    var mondaiCount = 0
+    var correctCount = 0
+    let total = 10
+    
+    func loadCSV(fileName :String) -> [String] {
+        
+        var csvArray:[String] = []
+        
+        let csvBundle = Bundle.main.path(forResource: fileName, ofType: "csv")!
+        
+        
+        do {
+            let csvData = try String(contentsOfFile: csvBundle, encoding: String.Encoding.utf8)
+            
+            let lineChange = csvData.replacingOccurrences(of: "\r", with: "\n")
+            csvArray = lineChange.components(separatedBy: "\n")
+            
+        } catch let error as NSError {
+            print("エラー: \(error)")
+        }
+         return csvArray
+    }
+    
+   
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
