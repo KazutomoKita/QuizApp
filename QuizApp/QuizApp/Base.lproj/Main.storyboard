@@ -30,8 +30,11 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pIa-tO-hge">
                                 <rect key="frame" x="20" y="561" width="374" height="30"/>
                                 <state key="normal" title="スタート"/>
+                                <connections>
+                                    <segue destination="Ojl-0L-CXl" kind="presentation" id="F2z-mQ-9bo"/>
+                                </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="xEh-DM-tKs">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="xEh-DM-tKs">
                                 <rect key="frame" x="20" y="476" width="374" height="56"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
@@ -84,45 +87,45 @@
             <objects>
                 <viewController id="Ojl-0L-CXl" customClass="KenteiViewController" customModule="QuizApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dGY-Ef-4Ij">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9wL-92-26t">
-                                <rect key="frame" x="82" y="62" width="250" height="30"/>
+                                <rect key="frame" x="82" y="18" width="250" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="b1j-Pg-WOK">
-                                <rect key="frame" x="20" y="100" width="374" height="128"/>
+                                <rect key="frame" x="20" y="56" width="374" height="128"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C8m-Kn-l5d">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C8m-Kn-l5d">
                                 <rect key="frame" x="20" y="428" width="374" height="36"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x15-as-qXz">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x15-as-qXz">
                                 <rect key="frame" x="20" y="484" width="374" height="36"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Dc-ED-aqd">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Dc-ED-aqd">
                                 <rect key="frame" x="20" y="540" width="374" height="36"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y1y-JD-Kny">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y1y-JD-Kny">
                                 <rect key="frame" x="20" y="596" width="374" height="36"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
@@ -130,7 +133,7 @@
                                 <state key="normal" title="Button"/>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="J3j-Nf-tCK">
-                                <rect key="frame" x="132" y="89" width="150" height="150"/>
+                                <rect key="frame" x="132" y="45" width="150" height="150"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="J3j-Nf-tCK" secondAttribute="height" multiplier="1:1" id="vXm-Wa-Ixi"/>
                                 </constraints>
@@ -186,13 +189,53 @@
                     <view key="view" contentMode="scaleToFill" id="Rvq-wf-K4z">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="goukaku" translatesAutoresizingMaskIntoConstraints="NO" id="gkI-4z-p0c">
+                                <rect key="frame" x="87" y="203" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="UgS-WA-D02"/>
+                                    <constraint firstAttribute="width" constant="240" id="mFk-PT-RpI"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X5r-QL-AZP">
+                                <rect key="frame" x="87" y="411" width="240" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u0k-Zt-dWw">
+                                <rect key="frame" x="20" y="594" width="374" height="36"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Back"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="kDl-Xr-41q" firstAttribute="trailing" secondItem="u0k-Zt-dWw" secondAttribute="trailing" constant="20" id="3aS-4g-exn"/>
+                            <constraint firstItem="gkI-4z-p0c" firstAttribute="leading" secondItem="kDl-Xr-41q" secondAttribute="leading" constant="87" id="5Ae-VH-LLS"/>
+                            <constraint firstItem="X5r-QL-AZP" firstAttribute="top" secondItem="gkI-4z-p0c" secondAttribute="bottom" constant="80" id="ArH-69-yhl"/>
+                            <constraint firstItem="kDl-Xr-41q" firstAttribute="trailing" secondItem="gkI-4z-p0c" secondAttribute="trailing" constant="87" id="DfH-CM-dz1"/>
+                            <constraint firstItem="kDl-Xr-41q" firstAttribute="trailing" secondItem="X5r-QL-AZP" secondAttribute="trailing" constant="87" id="OZV-Eu-hTH"/>
+                            <constraint firstItem="X5r-QL-AZP" firstAttribute="leading" secondItem="kDl-Xr-41q" secondAttribute="leading" constant="87" id="Yrk-Si-Kcb"/>
+                            <constraint firstItem="u0k-Zt-dWw" firstAttribute="leading" secondItem="kDl-Xr-41q" secondAttribute="leading" constant="20" id="fF4-02-0JU"/>
+                            <constraint firstItem="u0k-Zt-dWw" firstAttribute="top" secondItem="X5r-QL-AZP" secondAttribute="bottom" constant="162" id="lI6-pO-4DZ"/>
+                            <constraint firstItem="gkI-4z-p0c" firstAttribute="top" secondItem="kDl-Xr-41q" secondAttribute="top" constant="203" id="pba-mC-8Cs"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="kDl-Xr-41q"/>
                     </view>
+                    <connections>
+                        <outlet property="judgeImageView" destination="gkI-4z-p0c" id="wpO-Ep-SqE"/>
+                        <outlet property="scoreLabel" destination="X5r-QL-AZP" id="L1e-ed-0eQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HU8-TB-sXN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3927" y="72"/>
+            <point key="canvasLocation" x="3926.0869565217395" y="71.651785714285708"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="goukaku" width="488" height="324"/>
+    </resources>
 </document>

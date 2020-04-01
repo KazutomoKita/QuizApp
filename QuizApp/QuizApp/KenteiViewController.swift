@@ -144,5 +144,11 @@ class KenteiViewController: UIViewController {
         judgeImageView.isHidden = true
         nextProblem()
     }
+    
+    //得点画面に値渡し
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let sVC = segue.destination as! ScoreViewController
+        sVC.correct = correctCount
+    }
 
 }
