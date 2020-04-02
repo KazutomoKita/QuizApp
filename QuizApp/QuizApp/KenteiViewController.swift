@@ -15,7 +15,7 @@ class KenteiViewController: UIViewController {
     var mondaiArray:[String] = []
     var mondaiCount = 0
     var correctCount = 0
-    let total = 3
+    let total = 7
     
     //解説バックグラウンド画像
     var kaisetsuBGImageView = UIImageView()
@@ -143,8 +143,9 @@ class KenteiViewController: UIViewController {
         seikaiLabel.text = mondaiArray[6]
         //解説テキストビューのテキストをmondaiArrayから取得
         kaisetsuTextView.text = mondaiArray[7]
+        //ボタンのy座標取得
         let answerButtonY = answerButton1.frame.origin.y
-        
+        //解説バックグラウンドを表示させるアニメーション
         UIView.animate(withDuration: 0.5, animations: {() -> Void in self.kaisetsuBGImageView.frame = CGRect(x: self.kaisetsuBGX, y:Double(answerButtonY), width:320, height: 210)})
         
         //選択肢ボタンの使用停止

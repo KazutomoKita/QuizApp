@@ -17,24 +17,12 @@ class ScoreViewController: UIViewController {
         //正解数を表示
         scoreLabel.text = "正解数は\(correct)問です。"
         
-        if correct >= 3 {
+        if correct >= 5 {
             judgeImageView.image = UIImage(named: "goukaku")
         } else {
             judgeImageView.image = UIImage(named: "fugoukaku")
         }
 
-        // Do any additional setup after loading the view.
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
