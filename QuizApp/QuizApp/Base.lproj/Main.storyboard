@@ -227,23 +227,43 @@
                                     <segue destination="BYZ-38-t0r" kind="presentation" id="wrY-g4-NF4"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P8U-2w-37v">
+                                <rect key="frame" x="87" y="464" width="240" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nDi-E4-UA3">
+                                <rect key="frame" x="87" y="510" width="240" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="kDl-Xr-41q" firstAttribute="trailing" secondItem="P8U-2w-37v" secondAttribute="trailing" constant="87" id="2gb-WL-der"/>
                             <constraint firstItem="kDl-Xr-41q" firstAttribute="trailing" secondItem="u0k-Zt-dWw" secondAttribute="trailing" constant="20" id="3aS-4g-exn"/>
                             <constraint firstItem="gkI-4z-p0c" firstAttribute="leading" secondItem="kDl-Xr-41q" secondAttribute="leading" constant="87" id="5Ae-VH-LLS"/>
+                            <constraint firstItem="kDl-Xr-41q" firstAttribute="trailing" secondItem="nDi-E4-UA3" secondAttribute="trailing" constant="87" id="6gG-Ny-YV6"/>
                             <constraint firstItem="X5r-QL-AZP" firstAttribute="top" secondItem="gkI-4z-p0c" secondAttribute="bottom" constant="80" id="ArH-69-yhl"/>
+                            <constraint firstItem="u0k-Zt-dWw" firstAttribute="top" secondItem="nDi-E4-UA3" secondAttribute="bottom" constant="63" id="CF7-9R-pJU"/>
                             <constraint firstItem="kDl-Xr-41q" firstAttribute="trailing" secondItem="gkI-4z-p0c" secondAttribute="trailing" constant="87" id="DfH-CM-dz1"/>
+                            <constraint firstItem="P8U-2w-37v" firstAttribute="top" secondItem="X5r-QL-AZP" secondAttribute="bottom" constant="32" id="Jfh-4J-8aZ"/>
                             <constraint firstItem="kDl-Xr-41q" firstAttribute="trailing" secondItem="X5r-QL-AZP" secondAttribute="trailing" constant="87" id="OZV-Eu-hTH"/>
+                            <constraint firstItem="P8U-2w-37v" firstAttribute="leading" secondItem="kDl-Xr-41q" secondAttribute="leading" constant="87" id="YRZ-Gf-Jlq"/>
                             <constraint firstItem="X5r-QL-AZP" firstAttribute="leading" secondItem="kDl-Xr-41q" secondAttribute="leading" constant="87" id="Yrk-Si-Kcb"/>
                             <constraint firstItem="u0k-Zt-dWw" firstAttribute="leading" secondItem="kDl-Xr-41q" secondAttribute="leading" constant="20" id="fF4-02-0JU"/>
-                            <constraint firstItem="u0k-Zt-dWw" firstAttribute="top" secondItem="X5r-QL-AZP" secondAttribute="bottom" constant="162" id="lI6-pO-4DZ"/>
+                            <constraint firstItem="nDi-E4-UA3" firstAttribute="top" secondItem="P8U-2w-37v" secondAttribute="bottom" constant="25" id="owQ-kD-ox1"/>
                             <constraint firstItem="gkI-4z-p0c" firstAttribute="top" secondItem="kDl-Xr-41q" secondAttribute="top" constant="203" id="pba-mC-8Cs"/>
+                            <constraint firstItem="nDi-E4-UA3" firstAttribute="leading" secondItem="kDl-Xr-41q" secondAttribute="leading" constant="87" id="xGB-ju-3eY"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="kDl-Xr-41q"/>
                     </view>
                     <connections>
+                        <outlet property="goukakuTimesLabel" destination="P8U-2w-37v" id="qwV-ZH-J4h"/>
                         <outlet property="judgeImageView" destination="gkI-4z-p0c" id="wpO-Ep-SqE"/>
+                        <outlet property="rankLabel" destination="nDi-E4-UA3" id="e2r-By-4PK"/>
                         <outlet property="scoreLabel" destination="X5r-QL-AZP" id="L1e-ed-0eQ"/>
                     </connections>
                 </viewController>

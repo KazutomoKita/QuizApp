@@ -156,6 +156,8 @@ class KenteiViewController: UIViewController {
         
     }
     
+
+    
     //バックボタンメソッド
     @objc func backButtonTapped(){
         //画面の縦サイズを取得
